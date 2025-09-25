@@ -1,0 +1,126 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  color: #1d1d1f;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* ===== Header & Titles ===== */
+header {
+  background: #222;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0.5rem 0;
+}
+
+h2 {
+  color: #0071e3;
+  margin-top: 1rem;
+}
+
+/* ===== Navigation Bar ===== */
+nav {
+  background: #333;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #ff9900;
+}
+
+/* ===== Containers ===== */
+.container, main {
+  max-width: 900px;
+  margin: 20px auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+}
+
+/* ===== Product / Device Cards ===== */
+.product, .iphone, .ipad {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f5f5f5;
+  margin: 15px;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+
+.product img, .iphone img, .ipad img {
+  width: 160px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* ===== Lists ===== */
+ul, ol {
+  margin: 10px 0;
+  padding-left: 20px;
+}
+
+/* ===== Tables ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background: #0071e3;
+  color: #fff;
+}
+
+/* ===== Span Styling ===== */
+.highlight {
+  color: #d6336c;
+  font-weight: bold;
+}
+
+/* Example of id selector */
+#special-offer {
+  background: #ffe8a1;
+  padding: 10px;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 1.1rem;
+  margin: 15px 0;
+}
+
+/* ===== Responsive Media Queries ===== */
+@media (max-width: 700px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+  .product, .iphone, .ipad {
+    margin: 10px 0;
+  }
+  main, .container {
+    padding: 10px;
+  }
+}
